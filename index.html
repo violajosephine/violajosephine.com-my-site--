@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - violajosephine.com</title>
+    <title>violajosephine - HOME</title>
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="https://use.typekit.net/avw0uqc.css" />
   </head>
@@ -12,7 +12,7 @@
     <body>
       <div id="wrapper">
         <header>
-          <nav>
+          <nav id="navbar">
             <ul>
               <li><a href="">About me</a></li>
               <li>
@@ -34,20 +34,32 @@
             <img src="images/snake_img.png" alt="" id="img_snake" />
             <h3></h3>
             <img src="images/sunset.JPG" alt="" id="img_sunset" />
-            <h2>BLOG</h2>
+            <h2 id="blog_button">BLOG</h2>
           </div>
           <div id="about_me_container">
-            <div id="about_me_text_box"></div>
-            <div id="about_me_box"></div>
+            <div id="about_me_text_box">Text about me</div>
             <img src="images/nasicamput.JPG" alt="" id="img_about_me" />
+            <div id="about_me_box"></div>
           </div>
           <div id="resources_container">
-            <div id="resources_box"></div>
-            <img src="images/resourcesart.png" alt="" id="img_resources" />
+            <a href="">
+              <div id="resources_box">Resources</div>
+              <img src="images/resourcesart.png" alt="" id="img_resources"
+            /></a>
           </div>
         </main>
-        <footer>2021 violajosephine.com</footer>
+        <footer>
+          <nav>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About me</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Resources</a></li>
+            </ul>
+          </nav>
+          <p>2021 violajosephine.com</p>
+        </footer>
       </div>
-    </body>
+      <script src="js/home.js"></script>
   </body>
 </html>

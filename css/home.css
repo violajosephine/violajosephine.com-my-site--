@@ -5,12 +5,19 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
+  row-gap: 100px;
+  margin-top: 30px;
 }
 
-nav {
+header nav {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  background-color: #1d5e62;
+  z-index: 99;
+  box-shadow: 0px 0px 20px 1px #f6bb48;
 }
-nav a h1 {
+header nav a h1 {
   font-family: juniper-std, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -19,22 +26,30 @@ nav a h1 {
   margin-right: 50px;
 }
 
-nav a {
+header nav a {
   text-decoration: none;
   color: #f6bb48;
   font-family: "Courier New", Courier, monospace;
 }
-nav li {
+header nav li {
   list-style: none;
+  z-index: 2;
 }
-nav ul {
+header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
-  height: 130px;
+  height: 110px;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+}
+
 img {
   max-width: 100%;
 }
@@ -43,6 +58,7 @@ img {
   display: flex;
   align-items: center;
   margin-left: 120px;
+  margin-bottom: 50px;
 }
 
 #welcome_box {
@@ -54,7 +70,7 @@ img {
   font-weight: 400;
   font-style: normal;
   color: #ffde9b;
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   text-align: center;
   padding-top: 20%;
 }
@@ -78,14 +94,133 @@ img {
 }
 
 #pink_box_home {
-  height: 300px;
+  height: 200px;
   width: 100%;
   background-color: #ffeaf9;
 }
 
+#img_snake {
+  position: absolute;
+  width: 300px;
+  align-self: center;
+  /* omg align-self: mazkes anything align in the middle */
+}
+
+#img_sunset {
+  margin-top: -130px;
+  width: 500px;
+  align-self: center;
+}
+
+#blog_button {
+  font-family: juniper-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fcc2ff;
+  font-size: 2rem;
+  background-color: #361d00;
+  padding: auto;
+  width: 100px;
+  text-align: center;
+  padding: 20px;
+  align-self: center;
+  margin-top: -30px;
+}
+#about_me_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+}
+#about_me_box {
+  width: 600px;
+  height: 550px;
+  margin-left: -200px;
+  background-color: #f7bb49;
+  align-self: flex-end;
+  margin-left: -100px;
+}
+
+#img_about_me {
+  max-width: 300px;
+  position: absolute;
+  vertical-align: middle;
+  margin-left: 400px;
+  z-index: 2;
+}
+
+#about_me_text_box {
+  background-color: #ffde9b;
+  width: 600px;
+  height: 460px;
+  z-index: 1;
+  margin-right: -200px;
+}
+#resources_container a {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  text-decoration: none;
+}
+#resources_box {
+  background-color: white;
+  height: 60px;
+  color: #361d00;
+  text-align: center;
+  font-size: 2rem;
+  font-family: ltc-bodoni-175, serif;
+  font-weight: bolder;
+  padding-top: 30px;
+  width: 100%;
+  margin-right: -300px;
+  align-self: center;
+}
+
+#img_resources {
+  justify-self: center;
+  width: 200px;
+  align-self: center;
+}
+
+#resources_container a {
+  height: 60px;
+}
+footer nav {
+  border-top: solid #f6bb48 2px;
+  border-bottom: solid #f6bb48 2px;
+  align-self: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  margin: 30px;
+}
+
+footer li {
+}
+
 footer {
-  font-family: "Courier New", Courier, monospace;
+  font-family: ;
   color: #f6bb48;
   text-align: center;
   padding: 10px;
+  width: 400px;
+  margin: auto;
+  margin-top: 200px;
+  font-family: ltc-bodoni-175, serif;
+}
+footer a {
+  text-decoration: none;
+  color: #f6bb48;
+}
+
+footer li {
+  list-style: none;
+}
+footer p {
+  margin-top: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
 }
