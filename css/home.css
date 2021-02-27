@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: #1d5e62;
+}
+#wrapper {
+}
+
+nav {
+  margin: auto;
+}
+nav a h1 {
+  font-family: juniper-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f6bb48;
+  font-family: "Courier New", Courier, monospace;
+}
+nav li {
+  list-style: none;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+#welcome_box {
+  background-color: #737bde;
+  width: 300px;
+  height: 300px;
+}
+
+footer {
+  font-family: "Courier New", Courier, monospace;
+  color: #f6bb48;
+  text-align: center;
+  padding: 10px;
+}
