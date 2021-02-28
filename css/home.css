@@ -15,8 +15,21 @@ header nav {
   bottom: 0;
   background-color: #1d5e62;
   z-index: 99;
-  box-shadow: 0px 0px 20px 1px #f6bb48;
+  box-shadow: 0px 0px 10px 0.1px #123b3d;
 }
+
+nav img {
+  max-width: 30px;
+}
+
+nav ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  position: absolute;
+  right: 50px;
+}
+
 header nav a h1 {
   font-family: juniper-std, sans-serif;
   font-weight: 400;
@@ -35,13 +48,22 @@ header nav li {
   list-style: none;
   z-index: 2;
 }
+
+header nav li a:hover {
+  color: #fcc2ff;
+}
+
 header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
-  height: 110px;
+  height: 100px;
+}
+
+#ig_logo:hover {
+  background-image: ;
 }
 
 .sticky {
@@ -76,11 +98,14 @@ img {
 }
 
 #quote1_home {
-  width: 600px;
-  height: 250px;
+  width: 500px;
+  height: 150px;
   background-color: #ffde9b;
   margin-left: -250px;
   text-align: end;
+  padding-right: 100px;
+  padding-top: 100px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #img_welcome {
@@ -112,6 +137,11 @@ img {
   align-self: center;
 }
 
+#blog_container a {
+  align-self: center;
+  text-decoration: none;
+}
+
 #blog_button {
   font-family: juniper-std, sans-serif;
   font-weight: 400;
@@ -121,10 +151,15 @@ img {
   background-color: #361d00;
   padding: auto;
   width: 100px;
-  text-align: center;
+  align-content: center;
   padding: 20px;
-  align-self: center;
+  text-align: center;
   margin-top: -30px;
+  box-shadow: 0px 0px 15px 0.01px #301409;
+}
+
+#blog_button:hover {
+  box-shadow: 0px 0px 20px 1px #301409;
 }
 #about_me_container {
   display: flex;
@@ -140,6 +175,7 @@ img {
   background-color: #f7bb49;
   align-self: flex-end;
   margin-left: -100px;
+  box-shadow: 0px 0px 10px 0.1px #123b3d;
 }
 
 #img_about_me {
@@ -148,14 +184,23 @@ img {
   vertical-align: middle;
   margin-left: 400px;
   z-index: 2;
+  box-shadow: 0px 0px 10px 0.1px #123b3d;
+  /* border: #737bde 5px solid; */
 }
 
 #about_me_text_box {
   background-color: #ffde9b;
-  width: 600px;
-  height: 460px;
+  width: 500px;
+  height: 400px;
   z-index: 1;
-  margin-right: -200px;
+  margin-right: -100px;
+  padding: 30px;
+  padding-right: 60px;
+  font-family: ltc-bodoni-175, serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 0px 0px 10px 0.1px #123b3d;
+  color: #301409;
 }
 #resources_container a {
   display: flex;
@@ -166,7 +211,7 @@ img {
 #resources_box {
   background-color: white;
   height: 60px;
-  color: #361d00;
+  color: #301409;
   text-align: center;
   font-size: 2rem;
   font-family: ltc-bodoni-175, serif;
@@ -175,6 +220,9 @@ img {
   width: 100%;
   margin-right: -300px;
   align-self: center;
+}
+#resources_box:hover {
+  box-shadow: 0px 0px 15px 0.01px #301409;
 }
 
 #img_resources {
@@ -198,7 +246,8 @@ footer ul {
   margin: 30px;
 }
 
-footer li {
+footer li:hover {
+  text-decoration: underline;
 }
 
 footer {
