@@ -53,7 +53,7 @@ header nav a h1 {
   font-family: juniper-std, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 4.5rem;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -66,6 +66,7 @@ header nav a {
 header nav li {
   list-style: none;
   z-index: 2;
+  font-size: 1.1rem;
 }
 
 header nav li a:hover {
@@ -78,7 +79,7 @@ header nav ul {
   align-items: center;
   margin: 0;
   padding: 0;
-  height: 100px;
+  height: 120px;
 }
 
 .sticky {
@@ -94,29 +95,29 @@ img {
 #welcome_container {
   display: flex;
   align-items: center;
-  margin-left: 120px;
-  margin-bottom: 50px;
+  margin-left: 150px;
+  margin-bottom: 150px;
 }
 
 #welcome_box {
   background-color: #737bde;
-  width: 450px;
-  height: 250px;
+  width: 550px;
+  height: 300px;
   margin-right: -80px;
   font-family: ltc-bodoni-175, serif;
   font-weight: 400;
   font-style: normal;
   color: #ffde9b;
-  font-size: 2.9rem;
+  font-size: 4rem;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 #quote1_home {
   width: 500px;
   height: 150px;
   background-color: #ffde9b;
-  margin-left: -250px;
+  margin-left: -280px;
   text-align: end;
   padding-right: 100px;
   padding-top: 100px;
@@ -124,7 +125,7 @@ img {
 }
 
 #img_welcome {
-  max-height: 400px;
+  max-height: 450px;
   z-index: 1;
 }
 
@@ -134,21 +135,33 @@ img {
 }
 
 #pink_box_home {
-  height: 200px;
+  height: 250px;
   width: 100%;
   background-color: #ffeaf9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#quote1 {
+  padding-left: 100px;
+}
+
+#quote2 {
+  padding-right: 100px;
 }
 
 #img_snake {
   position: absolute;
-  width: 300px;
+  width: 350px;
   align-self: center;
   /* omg align-self: mazkes anything align in the middle */
 }
 
 #img_sunset {
-  margin-top: -130px;
-  width: 500px;
+  margin-top: -150px;
+  width: 600px;
   align-self: center;
 }
 
