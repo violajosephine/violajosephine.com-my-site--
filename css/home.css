@@ -146,10 +146,14 @@ img {
 
 #quote1 {
   padding-left: 100px;
+  width: 200px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #quote2 {
   padding-right: 100px;
+  width: 200px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #img_snake {
@@ -195,41 +199,64 @@ img {
   justify-content: space-around;
   align-self: center;
   align-items: center;
+  height: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 #about_me_box {
-  width: 600px;
-  height: 550px;
-  margin-left: -200px;
+  width: 400px;
+  height: 500px;
   background-color: #f7bb49;
-  align-self: flex-end;
-  margin-left: -100px;
+  align-self: center;
+  justify-self: center;
   box-shadow: 0px 0px 10px 0.1px #123b3d;
+  margin-left: -150px;
 }
 
 #img_about_me {
-  max-width: 300px;
-  position: absolute;
+  max-height: 450px;
   vertical-align: middle;
-  margin-left: 400px;
   z-index: 2;
   box-shadow: 0px 0px 10px 0.1px #123b3d;
-  /* border: #737bde 5px solid; */
+  margin-right: -80px;
 }
 
 #about_me_text_box {
   background-color: #ffde9b;
-  width: 500px;
-  height: 400px;
-  z-index: 1;
-  margin-right: -100px;
+  max-width: 250px;
+  /* max-height: 500px; */
   padding: 30px;
-  padding-right: 60px;
+  padding-right: 150px;
   font-family: ltc-bodoni-175, serif;
   font-weight: 400;
   font-style: normal;
   box-shadow: 0px 0px 10px 0.1px #123b3d;
   color: #301409;
+  align-self: center;
+  margin-right: -100px;
 }
+
+#more_me_button h3 {
+  text-align: center;
+  padding: 10px;
+  font-family: juniper-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #301409;
+  border: outset 7px #532c1d;
+  margin-top: 40px;
+}
+
+#more_me_button {
+  text-decoration: none;
+}
+
+#more_me_button h3:hover {
+  border: inset 7px #ffde9b;
+  color: #ffde9b;
+  background-color: #532c1d;
+}
+
 #resources_container a {
   display: flex;
   flex-direction: row;
