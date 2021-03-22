@@ -257,10 +257,64 @@ img {
   background-color: #532c1d;
 }
 
+form {
+  margin: auto;
+  font-family: juniper-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #301409;
+  text-shadow: #123b3d 1px 0px 3px;
+  margin-top: 50px;
+}
+
+input {
+  background-color: #1d5e62;
+  border: #123b3d 2px solid;
+  padding: 5px;
+  font-family: ltc-bodoni-175, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #fcc2ff;
+}
+
+button {
+  background-color: #1d5e62;
+  border: none;
+  width: 100px;
+  height: 150px;
+  margin: 20px;
+  background-image: url(../images/knife_fork.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+button:hover {
+  animation: shake 0.8s linear infinite;
+}
+
+@keyframes shake {
+  0% {transform: rotate(0deg)
+    );
+  }
+  25% {
+    transform: rotate(15deg)
+  }
+  50% {transform: rotate(0deg)
+  }
+  75% {transform: rotate(-15deg)
+  }
+  100% {transform: rotate(0deg)
+  }
+}
+
 #resources_container a {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 50px;
   text-decoration: none;
 }
 #resources_box {

@@ -24,6 +24,7 @@ function showPost(post) {
   document.querySelector("#alternative_headline").textContent =
     post.alternate_headline;
   document.querySelector("#author").textContent = post.author;
+  document.querySelector("#date").textContent = post.date_published;
   document.querySelector("#intro").textContent = post.intro;
   document.querySelector("#blog_image").src =
     "https://kea21spring-0a0d.restdb.io/media/" + post.image;

@@ -283,6 +283,9 @@ q {
   font-style: normal;
   color: white;
 }
+.other_post_date {
+  color: gray;
+}
 
 .other_post {
   /* border: #123b3d solid; */
