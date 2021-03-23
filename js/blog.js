@@ -39,3 +39,41 @@ function showPost(post) {
   //append child
   parent.appendChild(copy);
 }
+
+const other_url = "https://kea21spring-0a0d.restdb.io/rest/thoughts";
+const other_options = {
+  headers: {
+    "x-apikey": "60534ad0ff8b0c1fbbc28be2",
+  },
+};
+
+fetch(other_url, other_options)
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (otherdata) {
+    handleThought(otherdata);
+    console.log(otherdata);
+  });
+
+function handleThought(otherdata) {
+  otherdata.forEach(showThought);
+  console.log(otherdata);
+}
+
+function showThought(thought) {
+  console.log(thought);
+  //grab template
+  const template = document.querySelector(".thought_template").content;
+  //clone it
+  const copy = template.cloneNode(true);
+  //change content
+
+  copy.querySelector(".thought_text").innerHTML = thought.text;
+  copy.querySelector(".date_thought").textContent = thought.date;
+
+  //grab parent
+  const parent = document.querySelector("#posts");
+  //append child
+  parent.appendChild(copy);
+}

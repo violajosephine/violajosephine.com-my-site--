@@ -89,7 +89,8 @@ header nav ul {
 #header {
   text-align: center;
   color: #ffeaf9;
-  font-family: "Courier New", Courier, monospace;
+  font-family: ltc-bodoni-175, serif;
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 
@@ -98,6 +99,7 @@ header nav ul {
   /* grid-template-columns: repeat(auto-fill, minmax(500px, 800px)); */
   justify-content: center;
   column-gap: 30px;
+  row-gap: 30px;
   flex-wrap: wrap;
   align-items: stretch;
   flex: 1 1 auto;
@@ -108,19 +110,36 @@ header nav ul {
   display: none;
 }
 
+.thought {
+  background-image: url(../images/thought_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 464px;
+}
+.thought_text {
+  padding: 20px;
+
+  text-align: center;
+}
+
+.date_thought {
+  align-self: flex-end;
+  font-size: 1.3rem;
+}
 .post {
   background-color: white;
   grid-area: other;
   box-shadow: 1px 1px 10px 0.01px #123b3d;
   padding: 10px;
   background-color: white;
-  max-width: 400px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   border: #123b3d solid;
   text-align: center;
+  font-family: ltc-bodoni-175, serif;
 }
 
 .posts_title {
@@ -137,6 +156,10 @@ header nav ul {
 }
 .post_image {
   max-width: 80%;
+}
+
+.post_text {
+  font-size: 1rem;
 }
 
 footer nav {
