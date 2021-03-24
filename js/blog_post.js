@@ -25,14 +25,14 @@ function showPost(post) {
     post.alternate_headline;
   document.querySelector("#author").textContent = post.author;
   document.querySelector("#date").textContent = post.date_published;
-  document.querySelector("#intro").textContent = post.intro;
+  document.querySelector("#intro").innerHTML = post.intro;
   document.querySelector("#blog_image").src =
     "https://kea21spring-0a0d.restdb.io/media/" + post.image;
-  document.querySelector("#image_caption").textContent = post.image_caption;
-  document.querySelector("#body1").textContent = post.body1;
-  document.querySelector("#quote").textContent = post.quote;
+  document.querySelector("#image_caption").innerHTML = post.image_caption;
+  document.querySelector("#body1").innerHTML = post.body1;
+  document.querySelector("#quote").innerHTML = post.quote;
   document.querySelector("#quote_author").textContent = post.quote_author;
-  document.querySelector("#body2").textContent = post.body2;
+  document.querySelector("#body2").innerHTML = post.body2;
 
   const other_url =
     "https://kea21spring-0a0d.restdb.io/rest/test?max=" +
@@ -78,7 +78,7 @@ function showPost(post) {
       otherpost.date_published;
     copy.querySelector(".other_post_image").src =
       "https://kea21spring-0a0d.restdb.io/media/" + otherpost.image;
-    copy.querySelector(".other_post_text").textContent = otherpost.intro;
+    copy.querySelector(".other_post_text").innerHTML = otherpost.intro + "...";
 
     //grab parent
     const parent = document.querySelector("#other_posts");

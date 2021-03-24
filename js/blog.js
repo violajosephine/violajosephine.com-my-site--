@@ -32,7 +32,7 @@ function showPost(post) {
   copy.querySelector(".post_date").textContent = post.date_published;
   copy.querySelector(".post_image").src =
     "https://kea21spring-0a0d.restdb.io/media/" + post.image;
-  copy.querySelector(".post_text").textContent = post.intro;
+  copy.querySelector(".post_text").innerHTML = post.intro;
 
   //grab parent
   const parent = document.querySelector("#posts");

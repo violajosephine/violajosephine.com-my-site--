@@ -88,6 +88,43 @@ header nav ul {
   bottom: auto;
 }
 
+.falling_rose {
+  background-image: url(../images/rose.png);
+  height: 150px;
+  width: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  animation: rose 30s linear;
+  animation-iteration-count: 3;
+  z-index: 10;
+
+}
+.rose1 {left: 10%;
+  top: -12vw;}
+
+.rose2 {left: 30%;
+    top: -82vw;
+   transform:rotate(30deg);}
+
+.rose3 
+    {left: 50%;
+      top: -112vw;
+      transform:rotate(100deg);}
+
+.rose4 {left: 70%;
+        top: -132vw;
+        transform:rotate(50deg);}
+        
+.rose5 {left: 90%;
+          top: -52vw;
+          transform:rotate(130deg);}
+      
+
+@keyframes rose {
+  0%{transform: translateY(-5vw) rotate(inherit);}
+100%{transform: translateY( 350vw)rotate(360deg);}}
+
 img {
   max-width: 100%;
 }
@@ -178,20 +215,21 @@ img {
   font-family: juniper-std, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #fcc2ff;
+  color: #1d5e62;
   font-size: 2rem;
-  background-color: #361d00;
+  background-color: #737bde;
   padding: auto;
   width: 100px;
   align-content: center;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
-  margin-top: -30px;
-  box-shadow: 0px 0px 15px 0.01px #301409;
+  margin-top: -35px;
+border:outset 10px #f6bb48;
+border-radius: 50%;
 }
 
 #blog_button:hover {
-  box-shadow: 0px 0px 20px 1px #301409;
+   border:inset 10px #f6bb48; 
 }
 #about_me_container {
   display: flex;

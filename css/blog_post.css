@@ -139,14 +139,20 @@ header nav ul {
   text-align: center;
 }
 
-#title {
+#title,
+#alternative_headline {
   text-align: center;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 50px;
 }
+
+#alternative_headline {
+  margin-bottom: 50px;
+  font-size: 1rem;
+}
+
 #author {
   opacity: 0.5;
   margin: 0;
@@ -177,14 +183,15 @@ q {
   font-size: 2rem;
   margin: 0;
 }
-#quote p {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
 #quote {
+  font-size: 1.5rem;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+#quote_author {
+  margin-bottom: 50px;
+  margin-top: -10px;
 }
 
 #social_media {
@@ -255,6 +262,10 @@ q {
   cursor: pointer;
 }
 
+#about_me_body {
+  font-family: "Courier New", Courier, monospace;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -300,6 +311,13 @@ q {
 
 .other_post_image {
   max-width: 80%;
+}
+
+.other_post_text {
+  max-height: 115px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 footer nav {
