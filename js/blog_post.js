@@ -33,13 +33,28 @@ function showPost(post) {
   document.querySelector("#quote").innerHTML = post.quote;
   document.querySelector("#quote_author").textContent = post.quote_author;
   document.querySelector("#body2").innerHTML = post.body2;
+  document.querySelector("#video").src = post.youtube;
+  var video = document.getElementById("video");
+  if ((video.src = "undefined")) {
+    video.style.display = "none";
+  }
+  document.querySelector("#audio").src =
+    "https://kea21spring-0a0d.restdb.io/media/" + post.extra;
+  console.log("https://kea21spring-0a0d.restdb.io/media/" + post.extra);
+  var audio = document.getElementById("audio");
+  if (audio.src == "https://kea21spring-0a0d.restdb.io/media/undefined") {
+    audio.style.display = "none";
+  }
 
   const other_url =
     "https://kea21spring-0a0d.restdb.io/rest/test?max=" +
     post.length +
     "&?q={topic:" +
     post.topic +
-    "}";
+    "}" +
+    "&?q={id:{$not:" +
+    id +
+    "}}";
   console.log(other_url);
   console.log(post.topic);
   console.log(post.length);
