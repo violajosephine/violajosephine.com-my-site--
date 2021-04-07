@@ -1,4 +1,5 @@
-const url = "https://kea21spring-0a0d.restdb.io/rest/test";
+const url =
+  "https://kea21spring-0a0d.restdb.io/rest/test?q={}&sort=_created&dir=-1";
 const options = {
   headers: {
     "x-apikey": "60534ad0ff8b0c1fbbc28be2",
@@ -32,30 +33,18 @@ function showContent(post) {
     copy.querySelector(".post_date").textContent = post.date_published;
     copy.querySelector(".post_image").src =
       "https://kea21spring-0a0d.restdb.io/media/" + post.image;
+    // const noimage = copy.querySelector(".post_image");
+    // if (noimage.src == "https://kea21spring-0a0d.restdb.io/media/") {
+    //   console.log(noimage.src);
+    //   noimage.style.display = "none";
+    // }
     copy.querySelector(".post_text").innerHTML = post.intro;
 
     //grab parent
     const parent = document.querySelector("#posts");
     //append child
     parent.appendChild(copy);
-  }
-
-  // const other_url = "https://kea21spring-0a0d.restdb.io/rest/thoughts";
-  // const other_options = {
-  //   headers: {
-  //     "x-apikey": "60534ad0ff8b0c1fbbc28be2",
-  //   },
-  // };
-
-  // fetch(other_url, other_options)
-  //   .then(function (res) {
-  //     return res.json();
-  //   })
-  //   .then(function (otherdata) {
-  //     handleThought(otherdata);
-  //     console.log(otherdata);
-  //   });
-  else if (post.type == "thought") {
+  } else if (post.type == "thought") {
     //grab template
     const template = document.querySelector(".thought_template").content;
     //clone it
@@ -63,7 +52,7 @@ function showContent(post) {
     //change content
 
     copy.querySelector(".thought_text").innerHTML = post.intro;
-    // copy.querySelector(".date_thought").textContent = post.date;
+    copy.querySelector(".date_thought").textContent = post.date;
 
     //grab parent
     const parent = document.querySelector("#posts");

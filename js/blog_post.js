@@ -42,19 +42,23 @@ function showPost(post) {
     "https://kea21spring-0a0d.restdb.io/media/" + post.extra;
   console.log("https://kea21spring-0a0d.restdb.io/media/" + post.extra);
   var audio = document.getElementById("audio");
-  if (audio.src == "https://kea21spring-0a0d.restdb.io/media/undefined") {
+  if (
+    audio.src == "https://kea21spring-0a0d.restdb.io/media/undefined" ||
+    "https://kea21spring-0a0d.restdb.io/media/"
+  ) {
     audio.style.display = "none";
   }
-
+  document.querySelector("main").classList.remove("hidden");
   const other_url =
     "https://kea21spring-0a0d.restdb.io/rest/test?max=" +
-    post.length +
-    "&?q={topic:" +
-    post.topic +
-    "}" +
-    "&?q={id:{$not:" +
+    // post.length +
+    // "&?q=={topic:" +
+    // post.topic +
+    // "}" +
+    "&?q=={id:{$not:" +
     id +
-    "}}";
+    "}}" +
+    "&?q=={type:blog}";
   console.log(other_url);
   console.log(post.topic);
   console.log(post.length);
@@ -80,24 +84,39 @@ function showPost(post) {
   }
 
   function showOtherPosts(otherpost) {
-    console.log(otherpost);
-    //grab template
-    const template = document.querySelector(".post_template").content;
-    //clone it
-    const copy = template.cloneNode(true);
-    //change content
+    if (
+      (otherpost.type == "blog") &
+      (otherpost._id != post._id)
+      // & (otherpost.topic == "psychology")
+    ) {
+      console.log(otherpost);
+      //grab template
+      const template = document.querySelector(".post_template").content;
+      //clone it
+      const copy = template.cloneNode(true);
+      //change content
 
-    copy.querySelector("a").href = "blog_post.html?id=" + otherpost._id;
-    copy.querySelector(".other_post_title").textContent = otherpost.title;
-    copy.querySelector(".other_post_date").textContent =
-      otherpost.date_published;
-    copy.querySelector(".other_post_image").src =
-      "https://kea21spring-0a0d.restdb.io/media/" + otherpost.image;
-    copy.querySelector(".other_post_text").innerHTML = otherpost.intro + "...";
-
-    //grab parent
-    const parent = document.querySelector("#other_posts");
-    //append child
-    parent.appendChild(copy);
+      copy.querySelector("a").href = "blog_post.html?id=" + otherpost._id;
+      copy.querySelector(".other_post_title").textContent = otherpost.title;
+      copy.querySelector(".other_post_date").textContent =
+        otherpost.date_published;
+      copy.querySelector(".other_post_image").src =
+        "https://kea21spring-0a0d.restdb.io/media/" + otherpost.image;
+      const otherimage = copy.querySelector(".other_post_image");
+      if (otherimage.src == "https://kea21spring-0a0d.restdb.io/media/") {
+        console.log(otherimage.src);
+        otherimage.style.display = "none";
+      } else if ((otherpost.type == "thought") & (otherpost._id == post._id)) {
+        var other = copy.getElementByClass("other_post");
+        other.style.display = "none";
+        copy.querySelector(".other_post_more").style.display = "none";
+      }
+      copy.querySelector(".other_post_text").innerHTML =
+        otherpost.intro + "...";
+      //grab parent
+      const parent = document.querySelector("#other_posts");
+      //append child
+      parent.appendChild(copy);
+    }
   }
 }

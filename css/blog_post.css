@@ -130,6 +130,10 @@ header nav ul {
   align-self: start;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 #genre {
   text-decoration: none;
   color: #123b3d;
@@ -179,14 +183,12 @@ header nav ul {
   margin-top: 0;
 }
 
-q {
-  font-size: 2rem;
+#quote,
+#quote_author {
   margin: 0;
-}
-#quote {
-  font-size: 1.5rem;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px;
+  font-weight: bolder;
+  text-align: center;
 }
 
 #quote_author {
