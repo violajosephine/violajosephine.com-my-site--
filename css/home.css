@@ -212,25 +212,23 @@ img {
 }
 
 #blog_button {
-  font-family: juniper-std, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #1d5e62;
-  font-size: 2rem;
-  background-color: #737bde;
-  padding: auto;
-  width: 100px;
-  align-content: center;
-  padding: 30px;
-  text-align: center;
-  margin-top: -35px;
-border:outset 10px #f6bb48;
-border-radius: 50%;
+background-image: url(../images/blog_button.png);
+width: 200px;
+height: 200px;
+background-size: contain;
+background-repeat: no-repeat;
+margin-top: -100px;
 }
 
 #blog_button:hover {
-   border:inset 10px #f6bb48; 
+animation: 5s blogmove  infinite linear;
 }
+@keyframes blogmove {
+  0%{}
+  100%{transform: rotate(360deg);}
+}
+
+
 #about_me_container {
   display: flex;
   flex-direction: row;
@@ -282,7 +280,7 @@ border-radius: 50%;
   font-weight: 400;
   font-style: normal;
   color: #301409;
-  border: outset 7px #532c1d;
+  border: outset 4px #532c1d;
   margin-top: 40px;
 }
 
@@ -291,7 +289,7 @@ border-radius: 50%;
 }
 
 #more_me_button h3:hover {
-  border: inset 7px #ffde9b;
+  border: inset 4px #ffde9b;
   color: #ffde9b;
   background-color: #532c1d;
 }

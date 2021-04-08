@@ -143,7 +143,6 @@ header nav ul {
   max-height: 464px;
 }
 
-}
 .posts_title {
   text-align: center;
   font-family: juniper-std, sans-serif;
@@ -162,13 +161,12 @@ header nav ul {
 
 .post_text {
   font-size: 1rem;
+  overflow: hidden;
   text-overflow: ellipsis;
-  overflow-y: hidden;
-  overflow-x: visible;
-  margin-bottom: 21px;
+  /* overflow-x: visible; */
   max-width: 370px;
+  white-space: nowrap;
 }
-
 
 footer nav {
   border-top: solid #f6bb48 2px;
