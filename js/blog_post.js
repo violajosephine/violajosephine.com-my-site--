@@ -23,7 +23,7 @@ function showPost(post) {
   document.querySelector("#title").textContent = post.title;
   document.querySelector("#alternative_headline").textContent =
     post.alternate_headline;
-  document.querySelector("#author").textContent = post.author;
+  document.querySelector("#author").textContent = "by " + post.author;
   document.querySelector("#date").textContent = post.date_published;
   document.querySelector("#intro").innerHTML = post.intro;
   document.querySelector("#blog_image").src =

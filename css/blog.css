@@ -98,7 +98,7 @@ header nav ul {
 #posts {
   display: flex;
   /* grid-template-columns: repeat(auto-fill, minmax(500px, 800px)); */
-  justify-content: center;
+
   column-gap: 30px;
   row-gap: 30px;
   flex-wrap: wrap;
@@ -163,9 +163,9 @@ header nav ul {
   font-size: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   /* overflow-x: visible; */
   max-width: 370px;
-  white-space: nowrap;
 }
 
 footer nav {
