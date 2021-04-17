@@ -89,7 +89,7 @@ header nav ul {
 }
 #header {
   text-align: center;
-  color: #ffeaf9;
+  color: #fcc2ff;
   font-family: ltc-bodoni-175, serif;
   font-size: 3rem;
   margin-bottom: 30px;
@@ -126,6 +126,26 @@ header nav ul {
   align-self: flex-end;
   font-size: 1rem;
 }
+
+.quote {
+  background-image: url(../images/quote_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 464px;
+  display: flex;
+  flex-direction: column;
+}
+.quote_text {
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.date_quote {
+  align-self: flex-end;
+  font-size: 1rem;
+}
+
 .post {
   background-color: white;
   grid-area: other;
