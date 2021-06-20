@@ -26,8 +26,7 @@ function showPost(post) {
   document.querySelector("#author").textContent = "by " + post.author;
   document.querySelector("#date").textContent = post.date_published;
   document.querySelector("#intro").innerHTML = post.intro;
-  document.querySelector("#blog_image").src =
-    "https://kea21spring-0a0d.restdb.io/media/" + post.image;
+  document.querySelector("#blog_image").src = post.image;
   document.querySelector("#image_caption").innerHTML = post.image_caption;
   document.querySelector("#body1").innerHTML = post.body1;
   document.querySelector("#quote").innerHTML = post.quote;
@@ -35,7 +34,7 @@ function showPost(post) {
   document.querySelector("#body2").innerHTML = post.body2;
   document.querySelector("#video").src = post.youtube;
   var video = document.getElementById("video");
-  if ((video.src = "undefined")) {
+  if (video.src == "undefined") {
     video.style.display = "none";
   }
   document.querySelector("#audio").src =
@@ -100,8 +99,7 @@ function showPost(post) {
       copy.querySelector(".other_post_title").textContent = otherpost.title;
       copy.querySelector(".other_post_date").textContent =
         otherpost.date_published;
-      copy.querySelector(".other_post_image").src =
-        "https://kea21spring-0a0d.restdb.io/media/" + otherpost.image;
+      copy.querySelector(".other_post_image").src = otherpost.image;
       const otherimage = copy.querySelector(".other_post_image");
       if (otherimage.src == "https://kea21spring-0a0d.restdb.io/media/") {
         console.log(otherimage.src);

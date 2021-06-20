@@ -117,6 +117,19 @@ header nav ul {
   background-size: cover;
   height: 464px;
 }
+
+.little_thought {
+  font-size: 1.5rem !important;
+}
+
+.medium_thought {
+  font-size: 1.2rem !important;
+}
+
+.big_thought {
+  font-size: 1rem !important;
+}
+
 .thought_text {
   padding: 20px;
   text-align: center;
