@@ -12,6 +12,9 @@ main {
   
 }
 
+
+/* ----------------HEADER------------------ */
+
 header nav {
   position: absolute;
   width: 100vw;
@@ -91,6 +94,9 @@ header nav ul {
   bottom: auto;
 }
 
+
+/* ------------------ROSES--------------- */
+
 .falling_rose {
   background-image: url(../images/rose.png);
   height: 150px;
@@ -132,10 +138,14 @@ img {
   max-width: 100%;
 }
 
+/* -----------WELCOME SECTION------------- */
+
 #welcome_container {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-left: 150px;
+  margin-left: 250px;
+  margin-top: 50px;
   margin-bottom: 150px;
   
 }
@@ -155,58 +165,52 @@ img {
 }
 
 #quote1_home {
-  width: 500px;
-  height: 150px;
-  background-color: #ffde9b;
-  margin-left: -280px;
+  width: 420px;
+  height: 270px;
+  background-color:rgb(255, 96, 96);
+  margin-left: -180px;
   text-align: end;
   padding-right: 100px;
-  padding-top: 100px;
-  font-family: "Courier New", Courier, monospace;
+  padding-top: 150px;
+  font-family: ltc-bodoni-175;
+  font-size: 1.5rem;
+  color: darkgreen;
 }
 
 #img_welcome {
-  max-height: 450px;
+  max-width: 550px;
   z-index: 1;
+}
+
+
+/* ------------BLOG SECTION-------------- */
+
+
+#blog_and_breaky {display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  margin-right: 100px;
+column-gap: 100px;
+justify-items: start;
 }
 
 #blog_container {
   display: flex;
   flex-direction: column;
-}
-
-#pink_box_home {
-  height: 250px;
-  width: 100%;
-  background-color: #ffeaf9;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#quote1 {
-  padding-left: 100px;
-  width: 200px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-#quote2 {
-  padding-right: 100px;
-  width: 200px;
-  font-family: "Courier New", Courier, monospace;
+  align-self: flex-start;
+ 
 }
 
 #img_snake {
-  position: absolute;
-  width: 350px;
+  position: relative;
+  max-width: 350px;
   align-self: center;
   /* omg align-self: mazkes anything align in the middle */
 }
 
 #img_sunset {
-  margin-top: -150px;
-  width: 600px;
+  margin-top: -250px;
+  max-width: 600px;
   align-self: center;
 }
 
@@ -216,7 +220,7 @@ img {
 }
 
 #blog_button {
-background-image: url(../images/blog_button.png);
+background-image: url(../images/blog_button2.png);
 width: 200px;
 height: 200px;
 background-size: contain;
@@ -230,6 +234,70 @@ animation: 5s blogmove  infinite linear;
 @keyframes blogmove {
   0%{}
   100%{transform: rotate(360deg);}
+}
+
+/* ----------BREAKFAST FORM---------------- */
+
+
+#breakfast_form {  align-self: flex-end;
+}
+
+
+form {
+  margin: auto;
+  font-family: juniper-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #301409;
+  /* text-shadow: #123b3d 1px 0px 3px; */
+  padding: 30px;
+
+
+
+}
+
+input {
+color: #1d5e62;
+  border: #301409 2px solid;
+  padding: 5px;
+  font-family: ltc-bodoni-175, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+button {
+  border: none;
+  width: 100px;
+  height: 150px;
+  margin: 20px;
+  background-image: url(../images/knife_fork.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  background-color: #1d5e62;
+
+}
+
+button:hover {
+  animation: shake 0.8s linear infinite;
+}
+
+@keyframes shake {
+  0% {transform: rotate(0deg)
+    );
+  }
+  25% {
+    transform: rotate(15deg)
+  }
+  50% {transform: rotate(0deg)
+  }
+  75% {transform: rotate(-15deg)
+  }
+  100% {transform: rotate(0deg)
+  }
 }
 
 
@@ -298,59 +366,6 @@ animation: 5s blogmove  infinite linear;
   background-color: #532c1d;
 }
 
-form {
-  margin: auto;
-  font-family: juniper-std, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  font-size: 2.5rem;
-  color: #301409;
-  text-shadow: #123b3d 1px 0px 3px;
-
-}
-
-input {
-  background-color: #1d5e62;
-  border: #123b3d 2px solid;
-  padding: 5px;
-  font-family: ltc-bodoni-175, serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-  color: #fcc2ff;
-}
-
-button {
-  background-color: #1d5e62;
-  border: none;
-  width: 100px;
-  height: 150px;
-  margin: 20px;
-  background-image: url(../images/knife_fork.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-}
-
-button:hover {
-  animation: shake 0.8s linear infinite;
-}
-
-@keyframes shake {
-  0% {transform: rotate(0deg)
-    );
-  }
-  25% {
-    transform: rotate(15deg)
-  }
-  50% {transform: rotate(0deg)
-  }
-  75% {transform: rotate(-15deg)
-  }
-  100% {transform: rotate(0deg)
-  }
-}
 
 #resources_container a {
   display: flex;
