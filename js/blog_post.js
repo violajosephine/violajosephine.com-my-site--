@@ -34,7 +34,7 @@ function showPost(post) {
   document.querySelector("#body2").innerHTML = post.body2;
   document.querySelector("#video").src = post.youtube;
   var video = document.getElementById("video");
-  if (video.src == "undefined") {
+  if (video.src == "undefined" || '""') {
     video.style.display = "none";
   }
   document.querySelector("#audio").src =

@@ -131,7 +131,9 @@ header nav ul {
 }
 
 .thought_text {
-  padding: 20px;
+  padding: 10px;
+  padding-top: 5px;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -163,9 +165,9 @@ header nav ul {
   background-color: white;
   grid-area: other;
   box-shadow: 1px 1px 10px 0.01px #123b3d;
-  padding: 10px;
+  padding: 30px;
   background-color: white;
-  width: 400px;
+  width: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,7 +175,7 @@ header nav ul {
   border: #123b3d solid;
 
   font-family: ltc-bodoni-175, serif;
-  max-height: 464px;
+  max-height: 430px;
 }
 
 .posts_title {
@@ -189,7 +191,7 @@ header nav ul {
   margin: 5px;
 }
 .post_image {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .post_text {

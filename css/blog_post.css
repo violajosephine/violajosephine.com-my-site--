@@ -179,6 +179,11 @@ header nav ul {
   margin-right: auto;
 }
 
+#image_caption {
+  opacity: 0.5;
+  margin-bottom: 50px;
+}
+
 #body1 {
   margin-top: 0;
 }
