@@ -285,6 +285,7 @@ iframe[src=""] {
 #dude {
   margin-top: -50px;
   cursor: pointer;
+  z-index: 5;
 }
 
 #dude:hover {
