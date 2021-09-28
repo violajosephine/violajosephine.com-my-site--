@@ -21,6 +21,7 @@ header nav {
 #ig_logo {
   width: 40px;
   height: 40px;
+  margin-bottom: 10px;
   background-image: url(../images/ig_logo.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,6 +33,7 @@ header nav {
 #linkedin_logo {
   width: 40px;
   height: 40px;
+  margin-bottom: 10px;
   background-image: url(../images/linkedin_logo.png);
   background-size: cover;
   background-repeat: no-repeat;

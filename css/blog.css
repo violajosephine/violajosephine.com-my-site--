@@ -15,6 +15,7 @@ header nav {
 .ig_logo {
   width: 40px;
   height: 40px;
+  margin-bottom: 10px;
   background-image: url(../images/ig_logo.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,6 +27,7 @@ header nav {
 .linkedin_logo {
   width: 40px;
   height: 40px;
+  margin-bottom: 10px;
   background-image: url(../images/linkedin_logo.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,7 +40,6 @@ header nav {
 nav ol {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
   position: absolute;
   right: 50px;
 }
@@ -101,7 +102,6 @@ header nav ul {
 #posts {
   display: flex;
   /* grid-template-columns: repeat(auto-fill, minmax(500px, 800px)); */
-  row-gap: 30px;
   flex-wrap: wrap;
   align-items: stretch;
   flex: 1 1 auto;
@@ -179,6 +179,7 @@ header nav ul {
   max-height: 430px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 30px;
 }
 
 .posts_title {
