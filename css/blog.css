@@ -84,8 +84,11 @@ header nav ul {
 #content {
   margin-left: 50px;
   margin-right: 50px;
-  margin-top: 175px;
   max-width: 100%;
+  margin-top: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #header {
   text-align: center;
@@ -105,6 +108,7 @@ header nav ul {
   align-items: stretch;
   flex: 1 1 auto;
   flex-direction: row;
+  justify-content: center;
 }
 
 .hidden {
@@ -173,7 +177,6 @@ header nav ul {
   align-items: center;
   justify-content: space-between;
   border: #123b3d solid;
-
   font-family: ltc-bodoni-175, serif;
   max-height: 430px;
 }
