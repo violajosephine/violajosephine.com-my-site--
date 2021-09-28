@@ -82,8 +82,8 @@ header nav ul {
   bottom: auto;
 }
 #content {
-  margin-left: 50px;
-  margin-right: 50px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
   max-width: 100%;
   margin-top: 175px;
   display: flex;
@@ -101,8 +101,6 @@ header nav ul {
 #posts {
   display: flex;
   /* grid-template-columns: repeat(auto-fill, minmax(500px, 800px)); */
-
-  column-gap: 30px;
   row-gap: 30px;
   flex-wrap: wrap;
   align-items: stretch;
@@ -179,6 +177,8 @@ header nav ul {
   border: #123b3d solid;
   font-family: ltc-bodoni-175, serif;
   max-height: 430px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .posts_title {
